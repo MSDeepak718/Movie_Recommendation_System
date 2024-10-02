@@ -1,0 +1,89 @@
+.get {
+    margin-top: 25px;
+    margin-left: 40px;
+    position: relative; 
+}
+
+.getRec {
+    background-color: #E00712;
+    color: #fff;
+    border: none;
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+.seaRec {
+    padding: 10px 30px;
+    color: white;
+    border: 0.5px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #000;
+    margin: 0px 20px 0px 5px;
+    border-radius: 4px;
+}
+.seaRec:hover{
+    
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.15);
+}
+.getRec:hover {
+    background-color: #d30610; 
+}
+
+.input-container {
+    position: relative;
+    display: inline-block; 
+    width: 30%; 
+    margin: 0px 35px; 
+}
+
+.ph {
+    background-color: #2B2B2B;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box; 
+    outline: none; /* Remove the outline */
+}
+
+.ph:focus {
+    outline: none; /* Ensure no outline on focus */
+}
+
+.suggestions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    max-height: 200px;
+    color: #fff;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    background-color: #2B2B2B;
+    z-index: 1000;
+    border-radius: 0 0 4px 4px; 
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.suggestions li:last-child {
+    border-bottom: none; 
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0; 
+    color: #000;
+}

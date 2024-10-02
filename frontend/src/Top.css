@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+
+.poster {
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

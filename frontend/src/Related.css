@@ -1,0 +1,69 @@
+.recommendations {
+    color: white; /* White text */
+    padding: 20px;
+}
+
+.movie-details {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around; /* Align items space between */
+    align-items: center; /* Vertically center the items */
+}
+
+.image-rightside {
+    margin-right: 20px;
+}
+.image-rightside img {
+    border-radius: 8px;
+    width: 400px; 
+}
+
+.movie-info {
+    max-width: 600px; /* Limit width of text content */
+}
+
+.movie-info h2 {
+    font-size: 28px; /* Increased font size for title */
+    margin-bottom: 10px;
+}
+
+.movie-info p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.movie-trailer {
+    margin: 20px 0;
+    border: 1px solid #555; /* Added border for trailer section */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.movie-cast,
+.movie-reviews {
+    margin-top: 20px;
+}
+
+.movie-cast h3, .movie-reviews h3 {
+    margin: 10px 0;
+    font-size: 22px; /* Increased font size for subheadings */
+}
+
+.movie-cast ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-cast li {
+    background-color: #333; /* Slightly lighter background for cast */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.movie-reviews .review {
+    background-color: #333; /* Same lighter background */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
