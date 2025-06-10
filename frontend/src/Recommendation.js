@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Recommendation.css';
 import { useNavigate } from 'react-router-dom';
 
-const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+const API_KEY = "09a7b439053440772fb12d9c52b5027b";
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
 function Recommendation() {
@@ -20,7 +20,7 @@ function Recommendation() {
                 return;
             }
 
-            const response = await axios.get(`http://localhost:5003/api/recommend?title=${movie}`);
+            const response = await axios.get(`https://mrs-backend.onrender.com/api/recommend?title=${movie}`);
             const movieTitles = response.data;
             const movieData = await Promise.all(movieTitles.map(fetchMovieDetails));
             setRecommendations(movieData);
@@ -55,7 +55,7 @@ function Recommendation() {
     const fetchSuggestions = async (query) => {
         try {
             if (query.length > 0) {
-                const response = await axios.get(`http://localhost:5003/api/suggestions?query=${query}`);
+                const response = await axios.get(`https://mrs-backend.onrender.com/api/suggestions?query=${query}`);
                 setSuggestions(response.data);
             } else {
                 setSuggestions([]);

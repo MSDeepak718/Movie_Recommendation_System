@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Top.css';
 import { useNavigate } from 'react-router-dom';
 
-const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+const API_KEY = "09a7b439053440772fb12d9c52b5027b";
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
 function Top({ genre }) {
@@ -18,7 +18,7 @@ function Top({ genre }) {
     useEffect(() => {
         const getRecommendations = async () => {
             try {
-                const response = await axios.get('http://localhost:5003/api/top', {
+                const response = await axios.get('https://mrs-backend.onrender.com/api/top', {
                     params: { genre }
                 });
                 const movieTitles = response.data;

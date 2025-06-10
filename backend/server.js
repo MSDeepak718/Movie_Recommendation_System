@@ -7,7 +7,9 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://mrs-frontend.onrender.com'
+}));
 app.use(express.json());
 
 let movies = [];
@@ -42,7 +44,6 @@ const runPythonScript = (scriptPath, arg, res) => {
 
 app.get('/api/recommend', (req, res) => {
     const movieTitle = req.query.title;
-
     if (!movieTitle) {
         return res.status(400).json({ error: 'Movie title is required' });
     }
